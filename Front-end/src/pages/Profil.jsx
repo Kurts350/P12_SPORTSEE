@@ -1,8 +1,14 @@
+import styled from "styled-components"
+
+const FirstName = styled.span`
+color: red;`
+
 
 function Profil() {
   return (
     <div>
-      Profil
+      <h1>Bonjour <FirstName>Alex</FirstName></h1>
+      <p>Félicitations ! Vous avez explosé vos objectifs hier 👏 </p>
     </div>
   )
 }
