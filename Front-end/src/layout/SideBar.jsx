@@ -1,7 +1,7 @@
-import iconGym from '../assets/icon-gym.png'
-import iconBike from '../assets/icon-bike.png'
-import iconYoga from '../assets/icon-yoga.png'
-import iconSwim from '../assets/icon-swim.png'
+import iconGym from '../assets/icon/icon-gym.png'
+import iconBike from '../assets/icon/icon-bike.png'
+import iconYoga from '../assets/icon/icon-yoga.png'
+import iconSwim from '../assets/icon/icon-swim.png'
 import styled from 'styled-components'
 
 const SideBarContainer = styled.aside`
