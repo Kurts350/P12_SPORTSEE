@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import {HomePage} from '../pages/HomePage';
-import {Communauté} from '../pages/Communauté';
+import {Community} from '../pages/Community';
 import {Profil} from '../pages/Profil';
 import {ErrorPage404} from "../pages/ErrorPage404";
 import {Réglages} from '../pages/Réglages';
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/communaute",
-        element: <Communauté />,
+        element: <Community />,
       },
       {
         path: "/profil",
