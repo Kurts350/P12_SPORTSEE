@@ -14,13 +14,14 @@ import {
   DescritionTitle,
   DescritionContent,
 } from "./Profile.styles"
-import RadarChartData from "../../components/RadarChartData"
+import PerformancesChart from "../../components/PerformancesChart/PerformancesChart"
 
 import caloriesIcon from "../../assets/icon/calories-icon.png"
 import proteinIcon from "../../assets/icon/protein-icon.png"
 import carbsIcon from "../../assets/icon/carbs-icon.png"
 import fatIcon from "../../assets/icon/fat-icon.png"
 import AverageSessionChart from "../../components/AverageSessionCharts/AverageSessionChart"
+import ScoreChart from "../../components/ScoreChart/ScoreChart"
 
 function Profil() {
   const [userData, setUserData] = useState(null)
@@ -57,9 +58,11 @@ function Profil() {
               <AverageSessionChart />
             </ActivityItem>
             <ActivityItem>
-              <RadarChartData />
+              <PerformancesChart />
             </ActivityItem>
-            <ActivityItem></ActivityItem>
+            <ActivityItem>
+              <ScoreChart />
+            </ActivityItem>
           </ActivityData>
         </TrainingContainer>
         <DietDataContainer>

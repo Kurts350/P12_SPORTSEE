@@ -40,7 +40,6 @@ const ActivityData = styled.div`
   width: 100%;
 `
 const ActivityItem = styled.div`
-  border: 1px solid red;
   position: relative;
   width: 260px;
 `

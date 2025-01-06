@@ -1,6 +1,6 @@
 import React from "react"
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from "recharts"
-import data from "../mocked-data/user-performances-data.json"
+import data from "../../mocked-data/user-performances-data.json"
 
 const kindTranslations = {
   1: "Cardio",
@@ -16,11 +16,11 @@ const transformedData = data.data.data.map((item) => ({
   kind: kindTranslations[item.kind],
 }))
 
-export default class RadarChartData extends React.Component {
+export default class PerformancesChart extends React.Component {
   render() {
     return (
       <ResponsiveContainer width="100%" height="100%">
-        <RadarChart style={{ backgroundColor: "#282D30" }} outerRadius="50%" data={transformedData.reverse()} >
+        <RadarChart style={{ backgroundColor: "#282D30" }} outerRadius="50%" data={transformedData.reverse()}>
           <PolarGrid radialLines={false} />
           <PolarAngleAxis tick={{ fill: "#fff", fontSize: 12 }} dataKey="kind" fontSize={10} fontWeight={10} />
           <Radar backGround="black" dataKey="value" stroke="red" fill="red" fillOpacity={0.6} />
