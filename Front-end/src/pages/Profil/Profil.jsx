@@ -22,6 +22,7 @@ import carbsIcon from "../../assets/icon/carbs-icon.png"
 import fatIcon from "../../assets/icon/fat-icon.png"
 import AverageSessionChart from "../../components/AverageSessionCharts/AverageSessionChart"
 import ScoreChart from "../../components/ScoreChart/ScoreChart"
+import ActivityChart from "../../components/ActivityChart/ActivityChart"
 
 function Profil() {
   const [userData, setUserData] = useState(null)
@@ -52,7 +53,9 @@ function Profil() {
 
       <ProfilContainer>
         <TrainingContainer>
-          <DailyActivity></DailyActivity>
+          <DailyActivity>
+            <ActivityChart />
+          </DailyActivity>
           <ActivityData>
             <ActivityItem>
               <AverageSessionChart />
