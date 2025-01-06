@@ -1,12 +1,26 @@
-import { useState, useEffect, useCallback } from 'react'
-import { getUserData } from '../services/userService'
-import { FirstName, ProfilContainer, TrainingContainer, DietDataContainer, DailyActivity, ActivityData, ActivityItem, DataItem, DataIcon, DescriptionItem, DescritionTitle, DescritionContent } from '../styles/Profile.styles'
-import RadarChartData from '../components/RadarChartData'
+import { useState, useEffect, useCallback } from "react"
+import { getUserData } from "../../services/userService"
+import {
+  FirstName,
+  ProfilContainer,
+  TrainingContainer,
+  DietDataContainer,
+  DailyActivity,
+  ActivityData,
+  ActivityItem,
+  DataItem,
+  DataIcon,
+  DescriptionItem,
+  DescritionTitle,
+  DescritionContent,
+} from "./Profile.styles"
+import RadarChartData from "../../components/RadarChartData"
 
-import caloriesIcon from "../assets/icon/calories-icon.png"
-import proteinIcon from "../assets/icon/protein-icon.png"
-import carbsIcon from "../assets/icon/carbs-icon.png"
-import fatIcon from "../assets/icon/fat-icon.png"
+import caloriesIcon from "../../assets/icon/calories-icon.png"
+import proteinIcon from "../../assets/icon/protein-icon.png"
+import carbsIcon from "../../assets/icon/carbs-icon.png"
+import fatIcon from "../../assets/icon/fat-icon.png"
+import AverageSessionChart from "../../components/AverageSessionCharts/AverageSessionChart"
 
 function Profil() {
   const [userData, setUserData] = useState(null)
@@ -39,9 +53,11 @@ function Profil() {
         <TrainingContainer>
           <DailyActivity></DailyActivity>
           <ActivityData>
-            <ActivityItem></ActivityItem>
             <ActivityItem>
-                <RadarChartData />
+              <AverageSessionChart />
+            </ActivityItem>
+            <ActivityItem>
+              <RadarChartData />
             </ActivityItem>
             <ActivityItem></ActivityItem>
           </ActivityData>

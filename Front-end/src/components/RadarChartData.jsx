@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react"
+import React from "react"
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from "recharts"
 import data from "../mocked-data/user-performances-data.json"
 
@@ -16,7 +16,7 @@ const transformedData = data.data.data.map((item) => ({
   kind: kindTranslations[item.kind],
 }))
 
-export default class RadarChartData extends PureComponent {
+export default class RadarChartData extends React.Component {
   render() {
     return (
       <ResponsiveContainer width="100%" height="100%">

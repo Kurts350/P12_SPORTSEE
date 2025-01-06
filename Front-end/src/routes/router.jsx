@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import {HomePage} from '../pages/HomePage';
 import {Community} from '../pages/Community';
-import {Profil} from '../pages/Profil';
+import {Profil} from '../pages/Profil/Profil';
 import {ErrorPage404} from "../pages/ErrorPage404";
 import {Réglages} from '../pages/Réglages';
 import {Layout} from '../layout/Layout';
