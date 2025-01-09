@@ -1,10 +1,5 @@
-
 function Réglages() {
-  return (
-    <div>
-      Réglages
-    </div>
-  )
+  return <h1>Réglages</h1>;
 }
 
-export  {Réglages}
+export { Réglages };

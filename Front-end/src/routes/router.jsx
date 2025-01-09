@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Community />,
       },
       {
-        path: "/profil",
+        path: "/profil/:userId",
         element: <Profil/>
       },
       {

@@ -1,9 +1,12 @@
 import styled from "styled-components"
 
+
 const FirstName = styled.span`
   color: red;
 `
-const ProfilContainer = styled.div`
+const ProfilContainer= styled.div``
+
+const MainContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -12,21 +15,20 @@ const ProfilContainer = styled.div`
 const TrainingContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  gap: 50px;
   width: 70%;
 `
 const DietDataContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
   width: 30%;
 `
 const DailyActivity = styled.div`
   position: relative;
   height: 300px;
   width: 100%;
+  
 `
 const ActivityData = styled.div`
   display: flex;
@@ -49,6 +51,7 @@ const DataItem = styled.div`
   align-items: center;
   background: #fbfbfb;
   padding: 20px;
+  border-radius: 10px;
 `
 const DataIcon = styled.img`
   width: 60px;
@@ -62,11 +65,14 @@ const DescritionTitle = styled.h3`
 
 const DescritionContent = styled.p`
   margin: 0;
+  color: #9b9eac;
+  font-size: 14px;
 `
 
 export {
   FirstName,
   ProfilContainer,
+  MainContainer,
   TrainingContainer,
   DietDataContainer,
   DailyActivity,

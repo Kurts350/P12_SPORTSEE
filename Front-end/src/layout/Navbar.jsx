@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import logo from "../assets/logo.png"
-import { NavLink } from "react-router-dom"
+import { NavLink, useParams} from "react-router-dom"
 
 const NavBarContainer = styled.nav`
   background-color: rgb(0, 0, 0);
@@ -9,6 +9,7 @@ const NavBarContainer = styled.nav`
   ;
   padding: 0;
   margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 `
 
 const Logo = styled.img`
@@ -28,6 +29,8 @@ const NavLinkContainer = styled.div`
   justify-content: space-around;`
 
 function Navbar() {
+  const { userId } = useParams()
+  const activeUserId = userId || '12'
   return (
     <div>
       <NavBarContainer>
@@ -36,7 +39,7 @@ function Navbar() {
         </LogoContainer>
         <NavLinkContainer>
           <NavLinkWhite to="/">Accueil</NavLinkWhite>
-          <NavLinkWhite to="/profil">Profil</NavLinkWhite>
+          <NavLinkWhite to={`/profil/${activeUserId}`}>Profil</NavLinkWhite>
           <NavLinkWhite to="/reglage">Réglage</NavLinkWhite>
           <NavLinkWhite to="/communaute">Communauté</NavLinkWhite>
         </NavLinkContainer>

@@ -12,7 +12,7 @@ width: 100px;
 height: 100vh;
 align-items: center;
 justify-content: center;
-gap: 50px;
+gap: 200px;
 `
 const SideBarIcon = styled.img`
 width: 50px;`
