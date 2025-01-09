@@ -7,8 +7,20 @@ flex-direction: row;
 gap: 20px;
 `;
 
+const Button = styled.button`
+padding: 15px 20px;
+background-color: black;
+color: white;
+border-radius: 25px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: none;
+&:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: 0.3s;
 
-
+}
+`;
 
 
 function HomePage() {
@@ -24,8 +36,8 @@ function HomePage() {
     <>
       <h1>Accueil</h1>
       <ButtonContainer>
-        <button onClick={showProfil12}>Profil 12</button>
-        <button onClick={showProfil18}>Profil 18</button>
+        <Button onClick={showProfil12}>Profil 12</Button>
+        <Button onClick={showProfil18}>Profil 18</Button>
       </ButtonContainer>
     </>
   );
