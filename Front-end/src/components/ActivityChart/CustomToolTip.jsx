@@ -1,3 +1,7 @@
+import PropTypes from "prop-types";
+
+
+
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
@@ -16,3 +20,8 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 export  {CustomTooltip};
+
+CustomTooltip.propTypes = {
+  active: PropTypes.bool,
+  payload: PropTypes.array,
+}

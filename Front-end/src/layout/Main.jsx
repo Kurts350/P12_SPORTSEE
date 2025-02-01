@@ -1,7 +1,10 @@
+import PropTypes from 'prop-types'
 
 
-function Main({ children }) {
+export function Main({ children }) {
   return <div> {children} </div>;
 }
 
-export  {Main} ;
+Main.propTypes = {
+  children: PropTypes.node,
+};

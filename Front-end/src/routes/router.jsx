@@ -6,9 +6,6 @@ import {ErrorPage404} from "../pages/ErrorPage404";
 import {Réglages} from '../pages/Réglages';
 import {Layout} from '../layout/Layout';
 
-
-
-
 const router = createBrowserRouter([
   {
     element: <Layout />,

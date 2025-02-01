@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import logo from "../assets/logo.png"
 import { NavLink, useParams} from "react-router-dom"
+import PropTypes from "prop-types";
+
 
 const NavBarContainer = styled.nav`
   background-color: rgb(0, 0, 0);
@@ -47,5 +49,9 @@ function Navbar() {
     </div>
   )
 }
+
+Navbar.propTypes = {
+  userId: PropTypes.string,
+};
 
 export { Navbar }
