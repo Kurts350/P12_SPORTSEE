@@ -1,10 +1,9 @@
-import styled from "styled-components"
-
+import styled from 'styled-components'
 
 const FirstName = styled.span`
   color: red;
 `
-const ProfilContainer= styled.div``
+const ProfilContainer = styled.div``
 
 const MainContainer = styled.div`
   display: flex;
@@ -28,7 +27,6 @@ const DailyActivity = styled.div`
   position: relative;
   height: 300px;
   width: 100%;
-  
 `
 const ActivityData = styled.div`
   display: flex;
@@ -41,7 +39,9 @@ const ActivityData = styled.div`
 `
 const ActivityItem = styled.div`
   position: relative;
-  width: 260px;
+  width: 30%;
+  max-width: 260px;
+  height: 260px;
 `
 
 const DataItem = styled.div`

@@ -3,7 +3,6 @@ import iconBike from '../assets/icon/icon-bike.png'
 import iconYoga from '../assets/icon/icon-yoga.png'
 import iconSwim from '../assets/icon/icon-swim.png'
 import styled from 'styled-components'
-import PropTypes from "prop-types";
 
 
 const SideBarContainer = styled.aside`
@@ -48,7 +47,4 @@ function SideBar() {
 
 }
 
-SideBar.propTypes = {
-  userId: PropTypes.string,
-};
 export { SideBar }

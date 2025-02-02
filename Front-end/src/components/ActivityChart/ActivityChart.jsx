@@ -67,7 +67,7 @@ function ActivityChart({ data }) {
             domain={[0, 500]}
           />
           <Tooltip
-            content={<CustomTooltip />}
+            content={<CustomTooltip/>}
             cursor={{ fill: "rgba(196, 196, 196, 0.5)" }}
           />
           <Bar

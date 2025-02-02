@@ -44,7 +44,6 @@ function Profil() {
         getActivityData(userId),
         getPerformanceData(userId),
         getAverageSessionData(userId),
-
       ])
       setUserData(user)
       setActivityData(activity)

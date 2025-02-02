@@ -36,7 +36,6 @@ function PerformancesChart({ data }) {
           fontWeight={10}
         />
         <Radar
-          backGround="black"
           dataKey="value"
           stroke="red"
           fill="red"
