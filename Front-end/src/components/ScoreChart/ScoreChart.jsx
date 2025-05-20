@@ -1,15 +1,15 @@
-import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
-import { ScoreTitle } from "./ScoreChart.styles";
-import PropTypes from "prop-types";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from 'recharts'
+import { ScoreTitle } from './ScoreChart.styles'
+import PropTypes from 'prop-types'
 
 function ScoreChart({ data }) {
-  if (!data) return <div>Chargement...</div>;
+  if (!data) return <div>Chargement...</div>
 
-  const score = data * 100;
+  const score = data * 100
   const dataArray = [
-    { name: "circle", value: 100, fill: "#FBFBFB" },
-    { name: "score", value: score, fill: "#FF0000" },
-  ];
+    { name: 'circle', value: 100, fill: '#FBFBFB' },
+    { name: 'score', value: score, fill: '#FF0000' },
+  ]
   return (
     <ResponsiveContainer width="100%" height="100%">
       <ScoreTitle>Score</ScoreTitle>
@@ -21,7 +21,7 @@ function ScoreChart({ data }) {
         startAngle={90}
         barSize={10}
         data={dataArray}
-        style={{ backgroundColor: "##FFFFFF", borderRadius: "10px" }}
+        style={{ backgroundColor: '##FFFFFF', borderRadius: '10px' }}
       >
         <RadialBar
           clockWise={false}
@@ -41,15 +41,15 @@ function ScoreChart({ data }) {
                 </tspan>
               </text>
             ),
-            position: "center",
+            position: 'center',
           }}
         />
       </RadialBarChart>
     </ResponsiveContainer>
-  );
+  )
 }
 ScoreChart.propTypes = {
   data: PropTypes.number.isRequired,
-};
+}
 
-export default ScoreChart;
+export default ScoreChart
